@@ -1,0 +1,2286 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2025.1" RunE2="T">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">F:\Indiana University Bloomington\Projects\Project-13 SplitWise Analysis\Splitwise expenses Jun 14.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Splitwise expenses Jun 14.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Date" size="254" source="File: F:\Indiana University Bloomington\Projects\Project-13 SplitWise Analysis\Splitwise expenses Jun 14.csv" type="V_String" />
+            <Field name="Description" size="254" source="File: F:\Indiana University Bloomington\Projects\Project-13 SplitWise Analysis\Splitwise expenses Jun 14.csv" type="V_String" />
+            <Field name="Category" size="254" source="File: F:\Indiana University Bloomington\Projects\Project-13 SplitWise Analysis\Splitwise expenses Jun 14.csv" type="V_String" />
+            <Field name="Cost" size="254" source="File: F:\Indiana University Bloomington\Projects\Project-13 SplitWise Analysis\Splitwise expenses Jun 14.csv" type="V_String" />
+            <Field name="Currency" size="254" source="File: F:\Indiana University Bloomington\Projects\Project-13 SplitWise Analysis\Splitwise expenses Jun 14.csv" type="V_String" />
+            <Field name="Ramakrishna Reddy" size="254" source="File: F:\Indiana University Bloomington\Projects\Project-13 SplitWise Analysis\Splitwise expenses Jun 14.csv" type="V_String" />
+            <Field name="Venkat" size="254" source="File: F:\Indiana University Bloomington\Projects\Project-13 SplitWise Analysis\Splitwise expenses Jun 14.csv" type="V_String" />
+            <Field name="Maheswar Gorantla" size="254" source="File: F:\Indiana University Bloomington\Projects\Project-13 SplitWise Analysis\Splitwise expenses Jun 14.csv" type="V_String" />
+            <Field name="NAVEEN" size="254" source="File: F:\Indiana University Bloomington\Projects\Project-13 SplitWise Analysis\Splitwise expenses Jun 14.csv" type="V_String" />
+            <Field name="Harshith" size="254" source="File: F:\Indiana University Bloomington\Projects\Project-13 SplitWise Analysis\Splitwise expenses Jun 14.csv" type="V_String" />
+            <Field name="Bhanu Prakash kamma (removed)" size="254" source="File: F:\Indiana University Bloomington\Projects\Project-13 SplitWise Analysis\Splitwise expenses Jun 14.csv" type="V_String" />
+            <Field name="bhavik donga (removed)" size="254" source="File: F:\Indiana University Bloomington\Projects\Project-13 SplitWise Analysis\Splitwise expenses Jun 14.csv" type="V_String" />
+            <Field name="Rem Sanga (removed)" size="254" source="File: F:\Indiana University Bloomington\Projects\Project-13 SplitWise Analysis\Splitwise expenses Jun 14.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="66" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\WELCOME\AppData\Local\Temp\Alteryx\Engine_15300_dd8e2cc52278434fbe8f082cb716d0c2_\Engine_15300_d63dcb7c94ac4b398a25b273c527b77c~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="222" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Date" selected="True" type="Date" size="10" />
+            <SelectField field="Category" selected="True" />
+            <SelectField field="Cost" selected="True" type="Float" size="4" />
+            <SelectField field="Currency" selected="True" />
+            <SelectField field="Ramakrishna Reddy" selected="True" rename="Ram" type="Float" size="4" />
+            <SelectField field="Venkat" selected="True" type="Float" size="4" />
+            <SelectField field="Maheswar Gorantla" selected="True" rename="Maheshwar" type="Float" size="4" />
+            <SelectField field="NAVEEN" selected="True" rename="Naveen" type="Float" size="4" />
+            <SelectField field="Harshith" selected="True" type="Float" size="4" />
+            <SelectField field="Bhanu Prakash kamma (removed)" selected="False" rename="Bhanu" type="Float" size="4" />
+            <SelectField field="bhavik donga (removed)" selected="False" rename="Bhavik" type="Float" size="4" />
+            <SelectField field="Rem Sanga (removed)" selected="False" rename="Rem" type="Float" size="4" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Date" source="File: F:\Indiana University Bloomington\Projects\Project-13 SplitWise Analysis\Splitwise expenses Jun 14.csv" type="Date" />
+            <Field name="Category" size="254" source="File: F:\Indiana University Bloomington\Projects\Project-13 SplitWise Analysis\Splitwise expenses Jun 14.csv" type="V_String" />
+            <Field name="Cost" source="File: F:\Indiana University Bloomington\Projects\Project-13 SplitWise Analysis\Splitwise expenses Jun 14.csv" type="Float" />
+            <Field name="Currency" size="254" source="File: F:\Indiana University Bloomington\Projects\Project-13 SplitWise Analysis\Splitwise expenses Jun 14.csv" type="V_String" />
+            <Field name="Ram" source="File: F:\Indiana University Bloomington\Projects\Project-13 SplitWise Analysis\Splitwise expenses Jun 14.csv" type="Float" />
+            <Field name="Venkat" source="File: F:\Indiana University Bloomington\Projects\Project-13 SplitWise Analysis\Splitwise expenses Jun 14.csv" type="Float" />
+            <Field name="Maheshwar" source="File: F:\Indiana University Bloomington\Projects\Project-13 SplitWise Analysis\Splitwise expenses Jun 14.csv" type="Float" />
+            <Field name="Naveen" source="File: F:\Indiana University Bloomington\Projects\Project-13 SplitWise Analysis\Splitwise expenses Jun 14.csv" type="Float" />
+            <Field name="Harshith" source="File: F:\Indiana University Bloomington\Projects\Project-13 SplitWise Analysis\Splitwise expenses Jun 14.csv" type="Float" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings>
+        <Position x="354" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Check Box (135)">True</Value>
+          <Value name="Check Box (136)">False</Value>
+          <Value name="List Box (11)">"Date","Category","Cost","Currency","Ram","Venkat","Maheshwar","Naveen","Harshith"</Value>
+          <Value name="Check Box (84)">True</Value>
+          <Value name="Check Box (117)">True</Value>
+          <Value name="Check Box (15)">True</Value>
+          <Value name="Check Box (109)">False</Value>
+          <Value name="Check Box (122)">False</Value>
+          <Value name="Check Box (53)">False</Value>
+          <Value name="Check Box (58)">False</Value>
+          <Value name="Check Box (70)">False</Value>
+          <Value name="Check Box (77)">False</Value>
+          <Value name="Drop Down (81)">upper</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output26">
+          <RecordInfo>
+            <Field name="Date" source="File: F:\Indiana University Bloomington\Projects\Project-13 SplitWise Analysis\Splitwise expenses Jun 14.csv" type="Date" />
+            <Field name="Category" size="254" source="File: F:\Indiana University Bloomington\Projects\Project-13 SplitWise Analysis\Splitwise expenses Jun 14.csv" type="V_String" />
+            <Field name="Cost" source="File: F:\Indiana University Bloomington\Projects\Project-13 SplitWise Analysis\Splitwise expenses Jun 14.csv" type="Float" />
+            <Field name="Currency" size="254" source="File: F:\Indiana University Bloomington\Projects\Project-13 SplitWise Analysis\Splitwise expenses Jun 14.csv" type="V_String" />
+            <Field name="Ram" source="File: F:\Indiana University Bloomington\Projects\Project-13 SplitWise Analysis\Splitwise expenses Jun 14.csv" type="Float" />
+            <Field name="Venkat" source="File: F:\Indiana University Bloomington\Projects\Project-13 SplitWise Analysis\Splitwise expenses Jun 14.csv" type="Float" />
+            <Field name="Maheshwar" source="File: F:\Indiana University Bloomington\Projects\Project-13 SplitWise Analysis\Splitwise expenses Jun 14.csv" type="Float" />
+            <Field name="Naveen" source="File: F:\Indiana University Bloomington\Projects\Project-13 SplitWise Analysis\Splitwise expenses Jun 14.csv" type="Float" />
+            <Field name="Harshith" source="File: F:\Indiana University Bloomington\Projects\Project-13 SplitWise Analysis\Splitwise expenses Jun 14.csv" type="Float" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="Cleanse.yxmc" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="342" y="30" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Category" action="GroupBy" rename="Category" />
+            <SummarizeField field="Harshith" action="Sum" rename="Harshith" />
+            <SummarizeField field="Venkat" action="Sum" rename="Venkat" />
+            <SummarizeField field="Naveen" action="Sum" rename="Naveen" />
+            <SummarizeField field="Ram" action="Sum" rename="Ram" />
+            <SummarizeField field="Maheshwar" action="Sum" rename="Maheshwar" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Category" size="254" source="Summarize: GroupBy - Category" type="V_String" />
+            <Field name="Harshith" source="Summarize: Sum - Harshith" type="Double" />
+            <Field name="Venkat" source="Summarize: Sum - Venkat" type="Double" />
+            <Field name="Naveen" source="Summarize: Sum - Naveen" type="Double" />
+            <Field name="Ram" source="Summarize: Sum - Ram" type="Double" />
+            <Field name="Maheshwar" source="Summarize: Sum - Maheshwar" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="534" y="30" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\WELCOME\AppData\Local\Temp\Alteryx\Engine_15300_dd8e2cc52278434fbe8f082cb716d0c2_\Engine_15300_00afde141deb4987a6335127ead9e380~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="150" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Category" action="GroupBy" rename="Category" />
+            <SummarizeField field="Cost" action="Sum" rename="Total spending" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Category" size="254" source="Summarize: GroupBy - Category" type="V_String" />
+            <Field name="Total spending" source="Summarize: Sum - Cost" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="270" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\WELCOME\AppData\Local\Temp\Alteryx\Engine_15300_dd8e2cc52278434fbe8f082cb716d0c2_\Engine_15300_246347cae41d4f198a611009bda2867a~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Transpose.Transpose">
+        <Position x="102" y="546" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ErrorWarn>Ignore</ErrorWarn>
+          <KeyFields>
+            <Field field="Date" />
+            <Field field="Category" />
+            <Field field="Cost" />
+            <Field field="Currency" />
+          </KeyFields>
+          <DataFields>
+            <Field field="Date" selected="False" />
+            <Field field="Category" selected="False" />
+            <Field field="Cost" selected="False" />
+            <Field field="Currency" selected="False" />
+            <Field field="Ram" selected="True" />
+            <Field field="Venkat" selected="True" />
+            <Field field="Maheshwar" selected="True" />
+            <Field field="Naveen" selected="True" />
+            <Field field="Harshith" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </DataFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Date" source="File: F:\Indiana University Bloomington\Projects\Project-13 SplitWise Analysis\Splitwise expenses Jun 14.csv" type="Date" />
+            <Field name="Category" size="254" source="File: F:\Indiana University Bloomington\Projects\Project-13 SplitWise Analysis\Splitwise expenses Jun 14.csv" type="V_String" />
+            <Field name="Cost" source="File: F:\Indiana University Bloomington\Projects\Project-13 SplitWise Analysis\Splitwise expenses Jun 14.csv" type="Float" />
+            <Field name="Currency" size="254" source="File: F:\Indiana University Bloomington\Projects\Project-13 SplitWise Analysis\Splitwise expenses Jun 14.csv" type="V_String" />
+            <Field name="Name" size="9" source="Transpose:" type="String" />
+            <Field name="Value" source="File: F:\Indiana University Bloomington\Projects\Project-13 SplitWise Analysis\Splitwise expenses Jun 14.csv" type="Float" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTranspose" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="390" y="546" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\WELCOME\AppData\Local\Temp\Alteryx\Engine_15300_dd8e2cc52278434fbe8f082cb716d0c2_\Engine_15300_87551d9dfcf0483cb658e1278496f300~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="198" y="546" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Name" action="GroupBy" rename="Name" />
+            <SummarizeField field="Value" action="Sum" rename="Total Spending" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Name" size="9" source="Summarize: GroupBy - Name" type="String" />
+            <Field name="Total Spending" source="Summarize: Sum - Value" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="25">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="474" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="DateTimeMonth([Date])  " field="Month" size="2" type="Int16" enabled="true" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Month = DateTimeMonth([Date])  
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Date" source="File: F:\Indiana University Bloomington\Projects\Project-13 SplitWise Analysis\Splitwise expenses Jun 14.csv" type="Date" />
+            <Field name="Category" size="254" source="File: F:\Indiana University Bloomington\Projects\Project-13 SplitWise Analysis\Splitwise expenses Jun 14.csv" type="V_String" />
+            <Field name="Cost" source="File: F:\Indiana University Bloomington\Projects\Project-13 SplitWise Analysis\Splitwise expenses Jun 14.csv" type="Float" />
+            <Field name="Currency" size="254" source="File: F:\Indiana University Bloomington\Projects\Project-13 SplitWise Analysis\Splitwise expenses Jun 14.csv" type="V_String" />
+            <Field name="Ram" source="File: F:\Indiana University Bloomington\Projects\Project-13 SplitWise Analysis\Splitwise expenses Jun 14.csv" type="Float" />
+            <Field name="Venkat" source="File: F:\Indiana University Bloomington\Projects\Project-13 SplitWise Analysis\Splitwise expenses Jun 14.csv" type="Float" />
+            <Field name="Maheshwar" source="File: F:\Indiana University Bloomington\Projects\Project-13 SplitWise Analysis\Splitwise expenses Jun 14.csv" type="Float" />
+            <Field name="Naveen" source="File: F:\Indiana University Bloomington\Projects\Project-13 SplitWise Analysis\Splitwise expenses Jun 14.csv" type="Float" />
+            <Field name="Harshith" source="File: F:\Indiana University Bloomington\Projects\Project-13 SplitWise Analysis\Splitwise expenses Jun 14.csv" type="Float" />
+            <Field name="Month" source="Formula: DateTimeMonth([Date])  " type="Int16" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="26">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="654" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Month" action="GroupBy" rename="Month" />
+            <SummarizeField field="Cost" action="Sum" rename="Total Spending" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Month" source="Summarize: GroupBy - Month" type="Int16" />
+            <Field name="Total Spending" source="Summarize: Sum - Cost" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="28">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="726" y="462" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="DateTimeFormat([Date], &quot;%w&quot;)&#xA;" field="DayofWeek" size="64" type="String" enabled="true" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[DayofWeek = DateTimeFormat([Date], "%w")
+
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Date" source="File: F:\Indiana University Bloomington\Projects\Project-13 SplitWise Analysis\Splitwise expenses Jun 14.csv" type="Date" />
+            <Field name="Category" size="254" source="File: F:\Indiana University Bloomington\Projects\Project-13 SplitWise Analysis\Splitwise expenses Jun 14.csv" type="V_String" />
+            <Field name="Cost" source="File: F:\Indiana University Bloomington\Projects\Project-13 SplitWise Analysis\Splitwise expenses Jun 14.csv" type="Float" />
+            <Field name="Currency" size="254" source="File: F:\Indiana University Bloomington\Projects\Project-13 SplitWise Analysis\Splitwise expenses Jun 14.csv" type="V_String" />
+            <Field name="Ram" source="File: F:\Indiana University Bloomington\Projects\Project-13 SplitWise Analysis\Splitwise expenses Jun 14.csv" type="Float" />
+            <Field name="Venkat" source="File: F:\Indiana University Bloomington\Projects\Project-13 SplitWise Analysis\Splitwise expenses Jun 14.csv" type="Float" />
+            <Field name="Maheshwar" source="File: F:\Indiana University Bloomington\Projects\Project-13 SplitWise Analysis\Splitwise expenses Jun 14.csv" type="Float" />
+            <Field name="Naveen" source="File: F:\Indiana University Bloomington\Projects\Project-13 SplitWise Analysis\Splitwise expenses Jun 14.csv" type="Float" />
+            <Field name="Harshith" source="File: F:\Indiana University Bloomington\Projects\Project-13 SplitWise Analysis\Splitwise expenses Jun 14.csv" type="Float" />
+            <Field name="DayofWeek" size="64" source="Formula: DateTimeFormat([Date], &quot;%w&quot;)&#xA;" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="29">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="810" y="462" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="IF [DayofWeek] = &quot;0&quot; THEN &quot;Sunday&quot;&#xA;ELSEIF [DayofWeek] = &quot;1&quot; THEN &quot;Monday&quot;&#xA;ELSEIF [DayofWeek] = &quot;2&quot; THEN &quot;Tuesday&quot;&#xA;ELSEIF [DayofWeek] = &quot;3&quot; THEN &quot;Wednesday&quot;&#xA;ELSEIF [DayofWeek] = &quot;4&quot; THEN &quot;Thursday&quot;&#xA;ELSEIF [DayofWeek] = &quot;5&quot; THEN &quot;Friday&quot;&#xA;ELSE &quot;Saturday&quot;&#xA;ENDIF&#xA;" field="DayofWeek" size="64" type="String" enabled="true" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DayofWeek = IF [DayofWeek] = "0" THEN "Sunday"
+ELSEIF [DayofWeek] = "1" THEN "Mo...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Date" source="File: F:\Indiana University Bloomington\Projects\Project-13 SplitWise Analysis\Splitwise expenses Jun 14.csv" type="Date" />
+            <Field name="Category" size="254" source="File: F:\Indiana University Bloomington\Projects\Project-13 SplitWise Analysis\Splitwise expenses Jun 14.csv" type="V_String" />
+            <Field name="Cost" source="File: F:\Indiana University Bloomington\Projects\Project-13 SplitWise Analysis\Splitwise expenses Jun 14.csv" type="Float" />
+            <Field name="Currency" size="254" source="File: F:\Indiana University Bloomington\Projects\Project-13 SplitWise Analysis\Splitwise expenses Jun 14.csv" type="V_String" />
+            <Field name="Ram" source="File: F:\Indiana University Bloomington\Projects\Project-13 SplitWise Analysis\Splitwise expenses Jun 14.csv" type="Float" />
+            <Field name="Venkat" source="File: F:\Indiana University Bloomington\Projects\Project-13 SplitWise Analysis\Splitwise expenses Jun 14.csv" type="Float" />
+            <Field name="Maheshwar" source="File: F:\Indiana University Bloomington\Projects\Project-13 SplitWise Analysis\Splitwise expenses Jun 14.csv" type="Float" />
+            <Field name="Naveen" source="File: F:\Indiana University Bloomington\Projects\Project-13 SplitWise Analysis\Splitwise expenses Jun 14.csv" type="Float" />
+            <Field name="Harshith" source="File: F:\Indiana University Bloomington\Projects\Project-13 SplitWise Analysis\Splitwise expenses Jun 14.csv" type="Float" />
+            <Field name="DayofWeek" size="64" source="Formula: IF [DayofWeek] = &quot;0&quot; THEN &quot;Sunday&quot;&#xA;ELSEIF [DayofWeek] = &quot;1&quot; THEN &quot;Monday&quot;&#xA;ELSEIF [DayofWeek] = &quot;2&quot; THEN &quot;Tuesday&quot;&#xA;ELSEIF [DayofWeek] = &quot;3&quot; THEN &quot;Wednesday&quot;&#xA;ELSEIF [DayofWeek] = &quot;4&quot; THEN &quot;Thursday&quot;&#xA;ELSEIF [DayofWeek] = &quot;5&quot; THEN &quot;Friday&quot;&#xA;ELSE &quot;Saturday&quot;&#xA;ENDIF&#xA;" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="30">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="906" y="462" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="DayofWeek" action="GroupBy" rename="DayofWeek" />
+            <SummarizeField field="Cost" action="AvgNo0" rename="Total Spending" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="DayofWeek" size="64" source="Summarize: GroupBy - DayofWeek" type="String" />
+            <Field name="Total Spending" source="Summarize: AvgNo0 - Cost" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="31">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="702" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Month" action="GroupBy" rename="Month" />
+            <SummarizeField field="Cost" action="Max" rename="Max Spending" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Month" source="Summarize: GroupBy - Month" type="Int16" />
+            <Field name="Max Spending" source="File: F:\Indiana University Bloomington\Projects\Project-13 SplitWise Analysis\Splitwise expenses Jun 14.csv" type="Float" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="33">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="942" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\WELCOME\AppData\Local\Temp\Alteryx\Engine_15300_dd8e2cc52278434fbe8f082cb716d0c2_\Engine_15300_4a0a254503324754930eceddb5932788~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="34">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="990" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\WELCOME\AppData\Local\Temp\Alteryx\Engine_15300_dd8e2cc52278434fbe8f082cb716d0c2_\Engine_15300_578414aee07a4d0e879ac93461690e56~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="36">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1098" y="462" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\WELCOME\AppData\Local\Temp\Alteryx\Engine_15300_dd8e2cc52278434fbe8f082cb716d0c2_\Engine_15300_35d32578bb0f4f33b54b5d682b7a87f8~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="37">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="666" y="78" width="168" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text><![CDATA[Expenditure by month
+]]></Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="38">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="666" y="162" width="168" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Max spending by month.</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="39">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="762" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Month" action="GroupBy" rename="Month" />
+            <SummarizeField field="Category_grouped" action="GroupBy" rename="Category_grouped" />
+            <SummarizeField field="Cost" action="Sum" rename="Total Spending" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Month" source="Summarize: GroupBy - Month" type="Int16" />
+            <Field name="Category_grouped" size="64" source="Summarize: GroupBy - Category_grouped" type="WString" />
+            <Field name="Total Spending" source="Summarize: Sum - Cost" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="40">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="678" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="IF Contains(LowerCase([Category]), &quot;TV/Phone/Internet&quot;) THEN &quot;Utilities&quot;&#xA;ELSEIF Contains(Lowercase([Category]), &quot;water&quot;) THEN &quot;Utilities&quot;&#xA;ELSEIF Contains(Lowercase([Category]), &quot;electricity&quot;) THEN &quot;Utilities&quot;&#xA;ELSEIF Contains(Lowercase([Category]), &quot;gas/fuel&quot;) THEN &quot;Utilities&quot;&#xA;ELSEIF Contains(LowerCase([Category]), &quot;utilities - other&quot;) THEN &quot;Utilities&quot;&#xA;ELSE &quot;Grocery&quot;&#xA;ENDIF&#xA;&#xA;" field="Category_grouped" size="64" type="WString" enabled="true" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Category_grouped = IF Contains(LowerCase([Category]), "TV/Phone/Internet") THEN ...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Date" source="File: F:\Indiana University Bloomington\Projects\Project-13 SplitWise Analysis\Splitwise expenses Jun 14.csv" type="Date" />
+            <Field name="Category" size="254" source="File: F:\Indiana University Bloomington\Projects\Project-13 SplitWise Analysis\Splitwise expenses Jun 14.csv" type="V_String" />
+            <Field name="Cost" source="File: F:\Indiana University Bloomington\Projects\Project-13 SplitWise Analysis\Splitwise expenses Jun 14.csv" type="Float" />
+            <Field name="Currency" size="254" source="File: F:\Indiana University Bloomington\Projects\Project-13 SplitWise Analysis\Splitwise expenses Jun 14.csv" type="V_String" />
+            <Field name="Ram" source="File: F:\Indiana University Bloomington\Projects\Project-13 SplitWise Analysis\Splitwise expenses Jun 14.csv" type="Float" />
+            <Field name="Venkat" source="File: F:\Indiana University Bloomington\Projects\Project-13 SplitWise Analysis\Splitwise expenses Jun 14.csv" type="Float" />
+            <Field name="Maheshwar" source="File: F:\Indiana University Bloomington\Projects\Project-13 SplitWise Analysis\Splitwise expenses Jun 14.csv" type="Float" />
+            <Field name="Naveen" source="File: F:\Indiana University Bloomington\Projects\Project-13 SplitWise Analysis\Splitwise expenses Jun 14.csv" type="Float" />
+            <Field name="Harshith" source="File: F:\Indiana University Bloomington\Projects\Project-13 SplitWise Analysis\Splitwise expenses Jun 14.csv" type="Float" />
+            <Field name="Month" source="Formula: DateTimeMonth([Date])  " type="Int16" />
+            <Field name="Category_grouped" size="64" source="Formula: IF Contains(LowerCase([Category]), &quot;TV/Phone/Internet&quot;) THEN &quot;Utilities&quot;&#xA;ELSEIF Contains(Lowercase([Category]), &quot;water&quot;) THEN &quot;Utilities&quot;&#xA;ELSEIF Contains(Lowercase([Category]), &quot;electricity&quot;) THEN &quot;Utilities&quot;&#xA;ELSEIF Contains(Lowercase([Category]), &quot;gas/fuel&quot;) THEN &quot;Utilities&quot;&#xA;ELSEIF Contains(LowerCase([Category]), &quot;utilities - other&quot;) THEN &quot;Utilities&quot;&#xA;ELSE &quot;Grocery&quot;&#xA;ENDIF&#xA;&#xA;" type="WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="41">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="690" y="246" width="300" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text><![CDATA[Monthly utility and groceries/miscellaneous spending
+]]></Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="43">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="630" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Cost" selected="True" />
+            <SelectField field="Ram" selected="True" />
+            <SelectField field="Venkat" selected="True" />
+            <SelectField field="Maheshwar" selected="True" />
+            <SelectField field="Naveen" selected="True" />
+            <SelectField field="Harshith" selected="True" />
+            <SelectField field="Month" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Cost" source="File: F:\Indiana University Bloomington\Projects\Project-13 SplitWise Analysis\Splitwise expenses Jun 14.csv" type="Float" />
+            <Field name="Ram" source="File: F:\Indiana University Bloomington\Projects\Project-13 SplitWise Analysis\Splitwise expenses Jun 14.csv" type="Float" />
+            <Field name="Venkat" source="File: F:\Indiana University Bloomington\Projects\Project-13 SplitWise Analysis\Splitwise expenses Jun 14.csv" type="Float" />
+            <Field name="Maheshwar" source="File: F:\Indiana University Bloomington\Projects\Project-13 SplitWise Analysis\Splitwise expenses Jun 14.csv" type="Float" />
+            <Field name="Naveen" source="File: F:\Indiana University Bloomington\Projects\Project-13 SplitWise Analysis\Splitwise expenses Jun 14.csv" type="Float" />
+            <Field name="Harshith" source="File: F:\Indiana University Bloomington\Projects\Project-13 SplitWise Analysis\Splitwise expenses Jun 14.csv" type="Float" />
+            <Field name="Month" source="Formula: DateTimeMonth([Date])  " type="Int16" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="44">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1170" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\WELCOME\AppData\Local\Temp\Alteryx\Engine_15300_dd8e2cc52278434fbe8f082cb716d0c2_\Engine_15300_7bc8391679d14c02a90ec87650912df7~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="45">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="990" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\WELCOME\AppData\Local\Temp\Alteryx\Engine_15300_dd8e2cc52278434fbe8f082cb716d0c2_\Engine_15300_0736a04efac14c57b67ad33c6bac366d~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="47">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="750" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="1033">
+            <Field field="Month" order="Ascending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Month - Ascending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Month" source="Summarize: GroupBy - Month" type="Int16" />
+            <Field name="Total Spending" source="Summarize: Sum - Cost" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="48">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="798" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="1033">
+            <Field field="Max Spending" order="Descending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Max Spending - Descending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Month" source="Summarize: GroupBy - Month" type="Int16" />
+            <Field name="Max Spending" source="File: F:\Indiana University Bloomington\Projects\Project-13 SplitWise Analysis\Splitwise expenses Jun 14.csv" type="Float" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="49">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="858" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="1033">
+            <Field field="Month" order="Ascending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Month - Ascending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Month" source="Summarize: GroupBy - Month" type="Int16" />
+            <Field name="Category_grouped" size="64" source="Summarize: GroupBy - Category_grouped" type="WString" />
+            <Field name="Total Spending" source="Summarize: Sum - Cost" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="50">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="822" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="1033">
+            <Field field="Month" order="Ascending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Month - Ascending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Month" source="Summarize: GroupBy - Month" type="Int16" />
+            <Field name="Ram" source="Summarize: Sum - Ram" type="Double" />
+            <Field name="Venkat" source="Summarize: Sum - Venkat" type="Double" />
+            <Field name="Maheshwar" source="Summarize: Sum - Maheshwar" type="Double" />
+            <Field name="Naveen" source="Summarize: Sum - Naveen" type="Double" />
+            <Field name="Harshith" source="Summarize: Sum - Harshith" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="51">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="726" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Month" action="GroupBy" rename="Month" />
+            <SummarizeField field="Ram" action="Sum" rename="Ram" />
+            <SummarizeField field="Venkat" action="Sum" rename="Venkat" />
+            <SummarizeField field="Maheshwar" action="Sum" rename="Maheshwar" />
+            <SummarizeField field="Naveen" action="Sum" rename="Naveen" />
+            <SummarizeField field="Harshith" action="Sum" rename="Harshith" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Month" source="Summarize: GroupBy - Month" type="Int16" />
+            <Field name="Ram" source="Summarize: Sum - Ram" type="Double" />
+            <Field name="Venkat" source="Summarize: Sum - Venkat" type="Double" />
+            <Field name="Maheshwar" source="Summarize: Sum - Maheshwar" type="Double" />
+            <Field name="Naveen" source="Summarize: Sum - Naveen" type="Double" />
+            <Field name="Harshith" source="Summarize: Sum - Harshith" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="54">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="906" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Month" selected="True" />
+            <SelectField field="Ram" selected="True" type="FixedDecimal" size="19.2" />
+            <SelectField field="Venkat" selected="True" type="FixedDecimal" size="19.2" />
+            <SelectField field="Maheshwar" selected="True" type="FixedDecimal" size="19.2" />
+            <SelectField field="Naveen" selected="True" type="FixedDecimal" size="19.2" />
+            <SelectField field="Harshith" selected="True" type="FixedDecimal" size="19.2" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Month" source="Summarize: GroupBy - Month" type="Int16" />
+            <Field name="Ram" scale="2" size="19" source="Summarize: Sum - Ram" type="FixedDecimal" />
+            <Field name="Venkat" scale="2" size="19" source="Summarize: Sum - Venkat" type="FixedDecimal" />
+            <Field name="Maheshwar" scale="2" size="19" source="Summarize: Sum - Maheshwar" type="FixedDecimal" />
+            <Field name="Naveen" scale="2" size="19" source="Summarize: Sum - Naveen" type="FixedDecimal" />
+            <Field name="Harshith" scale="2" size="19" source="Summarize: Sum - Harshith" type="FixedDecimal" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="55">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="954" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Month" selected="True" />
+            <SelectField field="Category_grouped" selected="True" />
+            <SelectField field="Total Spending" selected="True" type="FixedDecimal" size="19.2" />
+            <SelectField field="Ram" selected="False" type="FixedDecimal" size="19.2" />
+            <SelectField field="Venkat" selected="False" type="FixedDecimal" size="19.2" />
+            <SelectField field="Maheshwar" selected="False" type="FixedDecimal" size="19.2" />
+            <SelectField field="Naveen" selected="False" type="FixedDecimal" size="19.2" />
+            <SelectField field="Harshith" selected="False" type="FixedDecimal" size="19.2" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Month" source="Summarize: GroupBy - Month" type="Int16" />
+            <Field name="Category_grouped" size="64" source="Summarize: GroupBy - Category_grouped" type="WString" />
+            <Field name="Total Spending" scale="2" size="19" source="Summarize: Sum - Cost" type="FixedDecimal" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="57">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1002" y="462" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Total Spending" selected="True" type="FixedDecimal" size="19.2" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="DayofWeek" size="64" source="Summarize: GroupBy - DayofWeek" type="String" />
+            <Field name="Total Spending" scale="2" size="19" source="Summarize: Sum - Cost" type="FixedDecimal" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="58">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="798" y="426" width="172" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Avg spending by day of week</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="59">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="282" y="546" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Total Balance" selected="True" type="FixedDecimal" size="19.2" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Name" size="9" source="Summarize: GroupBy - Name" type="String" />
+            <Field name="Total Spending" source="Summarize: Sum - Value" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="60">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="210" y="510" width="156" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Total spending by person</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="61">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="174" y="318" width="144" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Total spending by category</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="62">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="438" y="30" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Harshith" selected="True" type="FixedDecimal" size="19.2" />
+            <SelectField field="Venkat" selected="True" type="FixedDecimal" size="19.2" />
+            <SelectField field="Naveen" selected="True" type="FixedDecimal" size="19.2" />
+            <SelectField field="Ram" selected="True" type="FixedDecimal" size="19.2" />
+            <SelectField field="Maheshwar" selected="True" type="FixedDecimal" size="19.2" />
+            <SelectField field="Category" selected="True" type="String" size="30" />
+            <SelectField field="Spending by Harshith" selected="False" type="FixedDecimal" size="19.2" />
+            <SelectField field="Spending by Venkat" selected="False" type="FixedDecimal" size="19.2" />
+            <SelectField field="Spending by Naveen" selected="False" type="FixedDecimal" size="19.2" />
+            <SelectField field="Spending by Ram" selected="False" type="FixedDecimal" size="19.2" />
+            <SelectField field="Spending by Maheswar" selected="False" type="FixedDecimal" size="19.2" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Category" size="30" source="Summarize: GroupBy - Category" type="String" />
+            <Field name="Harshith" scale="2" size="19" source="Summarize: Sum - Harshith" type="FixedDecimal" />
+            <Field name="Venkat" scale="2" size="19" source="Summarize: Sum - Venkat" type="FixedDecimal" />
+            <Field name="Naveen" scale="2" size="19" source="Summarize: Sum - Naveen" type="FixedDecimal" />
+            <Field name="Ram" scale="2" size="19" source="Summarize: Sum - Ram" type="FixedDecimal" />
+            <Field name="Maheshwar" scale="2" size="19" source="Summarize: Sum - Maheshwar" type="FixedDecimal" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="63">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="354" y="6" width="208" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Expenditure of each person by category</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="64">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="654" y="318" width="240" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Monthly spending by each person</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="65">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="846" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Total Spending" selected="True" type="FixedDecimal" size="19.2" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Month" source="Summarize: GroupBy - Month" type="Int16" />
+            <Field name="Total Spending" scale="2" size="19" source="Summarize: Sum - Cost" type="FixedDecimal" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="66">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="894" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Max Spending" selected="True" type="FixedDecimal" size="19.2" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Month" source="Summarize: GroupBy - Month" type="Int16" />
+            <Field name="Max Spending" scale="2" size="19" source="Summarize: Sum - Cost" type="FixedDecimal" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="67">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="1146" y="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>Category_grouped</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2025-06-15 22:07:16</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>Utilities</Operand>
+              <StartDate>2025-06-15 22:07:16</StartDate>
+              <EndDate>2025-06-15 22:07:16</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Category_grouped] = "Utilities"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="Month" source="Summarize: GroupBy - Month" type="Int16" />
+            <Field name="Category_grouped" size="64" source="Summarize: GroupBy - Category_grouped" type="WString" />
+            <Field name="Total Spending" scale="2" size="19" source="Summarize: Sum - Cost" type="FixedDecimal" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="Month" source="Summarize: GroupBy - Month" type="Int16" />
+            <Field name="Category_grouped" size="64" source="Summarize: GroupBy - Category_grouped" type="WString" />
+            <Field name="Total Spending" scale="2" size="19" source="Summarize: Sum - Cost" type="FixedDecimal" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="68">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="1230" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Month" action="GroupBy" rename="Month" />
+            <SummarizeField field="Total Spending" action="Max" rename="Max Spending" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Month" source="Summarize: GroupBy - Month" type="Int16" />
+            <Field name="Max Spending" scale="2" size="19" source="Summarize: Sum - Cost" type="FixedDecimal" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="69">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="1326" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="1033">
+            <Field field="Max Spending" order="Descending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Max Spending - Descending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Month" source="Summarize: GroupBy - Month" type="Int16" />
+            <Field name="Max Spending" scale="2" size="19" source="Summarize: Sum - Cost" type="FixedDecimal" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="70">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1398" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\WELCOME\AppData\Local\Temp\Alteryx\Engine_15300_dd8e2cc52278434fbe8f082cb716d0c2_\Engine_15300_95c27cf82b834a72a46574d1aaff381e~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="71">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="1218" y="330" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Month" action="GroupBy" rename="Month" />
+            <SummarizeField field="Total Spending" action="Max" rename="Max Spending" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Month" source="Summarize: GroupBy - Month" type="Int16" />
+            <Field name="Max Spending" scale="2" size="19" source="Summarize: Sum - Cost" type="FixedDecimal" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="72">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="1314" y="330" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="1033">
+            <Field field="Max Spending" order="Descending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Max Spending - Descending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Month" source="Summarize: GroupBy - Month" type="Int16" />
+            <Field name="Max Spending" scale="2" size="19" source="Summarize: Sum - Cost" type="FixedDecimal" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="73">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1386" y="330" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\WELCOME\AppData\Local\Temp\Alteryx\Engine_15300_dd8e2cc52278434fbe8f082cb716d0c2_\Engine_15300_74256792de6c44c6a08461b0a4c86056~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="74">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="1254" y="294" width="192" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Max groceries/miscellaneous spending</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="75">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="1278" y="210" width="148" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Max utilities by month</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="76">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Transpose.Transpose">
+        <Position x="510" y="606" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ErrorWarn>Ignore</ErrorWarn>
+          <KeyFields>
+            <Field field="Category" />
+          </KeyFields>
+          <DataFields>
+            <Field field="Date" selected="False" />
+            <Field field="Category" selected="False" />
+            <Field field="Cost" selected="False" />
+            <Field field="Currency" selected="False" />
+            <Field field="Ram" selected="True" />
+            <Field field="Venkat" selected="True" />
+            <Field field="Maheshwar" selected="True" />
+            <Field field="Naveen" selected="True" />
+            <Field field="Harshith" selected="True" />
+            <Field field="*Unknown" selected="False" />
+          </DataFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Category" size="254" source="File: F:\Indiana University Bloomington\Projects\Project-13 SplitWise Analysis\Splitwise expenses Jun 14.csv" type="V_String" />
+            <Field name="Name" size="9" source="Transpose:" type="String" />
+            <Field name="Value" source="File: F:\Indiana University Bloomington\Projects\Project-13 SplitWise Analysis\Splitwise expenses Jun 14.csv" type="Float" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTranspose" />
+    </Node>
+    <Node ToolID="77">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="594" y="606" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="IF Contains(LowerCase([Category]), &quot;TV/Phone/Internet&quot;) THEN &quot;Utilities&quot;&#xA;ELSEIF Contains(Lowercase([Category]), &quot;water&quot;) THEN &quot;Utilities&quot;&#xA;ELSEIF Contains(Lowercase([Category]), &quot;electricity&quot;) THEN &quot;Utilities&quot;&#xA;ELSEIF Contains(Lowercase([Category]), &quot;gas/fuel&quot;) THEN &quot;Utilities&quot;&#xA;ELSEIF Contains(LowerCase([Category]), &quot;utilities - other&quot;) THEN &quot;Utilities&quot;&#xA;ELSE [Category]&#xA;ENDIF&#xA;&#xA;" field="Category" size="254" type="V_String" enabled="true" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Category = IF Contains(LowerCase([Category]), "TV/Phone/Internet") THEN "Utiliti...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Category" size="254" source="Formula: IF Contains(LowerCase([Category]), &quot;TV/Phone/Internet&quot;) THEN &quot;Utilities&quot;&#xA;ELSEIF Contains(Lowercase([Category]), &quot;water&quot;) THEN &quot;Utilities&quot;&#xA;ELSEIF Contains(Lowercase([Category]), &quot;electricity&quot;) THEN &quot;Utilities&quot;&#xA;ELSEIF Contains(Lowercase([Category]), &quot;gas/fuel&quot;) THEN &quot;Utilities&quot;&#xA;ELSEIF Contains(LowerCase([Category]), &quot;utilities - other&quot;) THEN &quot;Utilities&quot;&#xA;ELSE [Category]&#xA;ENDIF&#xA;&#xA;" type="V_String" />
+            <Field name="Name" size="9" source="Transpose:" type="String" />
+            <Field name="Value" source="File: F:\Indiana University Bloomington\Projects\Project-13 SplitWise Analysis\Splitwise expenses Jun 14.csv" type="Float" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="78">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="726" y="606" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Category" action="GroupBy" rename="Category" />
+            <SummarizeField field="Value" action="Variance" rename="Variance in category" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Category" size="254" source="Summarize: GroupBy - Category" type="V_String" />
+            <Field name="Variance in category" source="Summarize: Variance - Value" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="79">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="846" y="606" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Category" selected="True" />
+            <SelectField field="Variance in category" selected="True" type="FixedDecimal" size="19.2" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Category" size="254" source="Summarize: GroupBy - Category" type="V_String" />
+            <Field name="Variance in category" scale="2" size="19" source="Summarize: Variance - Value" type="FixedDecimal" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="80">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="966" y="606" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\WELCOME\AppData\Local\Temp\Alteryx\Engine_15300_dd8e2cc52278434fbe8f082cb716d0c2_\Engine_15300_d4f56de5ae2a4d0194a4a42c0f33cdc5~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="82">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Transpose.Transpose">
+        <Position x="522" y="702" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ErrorWarn>Warn</ErrorWarn>
+          <KeyFields>
+            <Field field="Date" />
+            <Field field="Category" />
+          </KeyFields>
+          <DataFields>
+            <Field field="Date" selected="False" />
+            <Field field="Category" selected="False" />
+            <Field field="Cost" selected="False" />
+            <Field field="Currency" selected="False" />
+            <Field field="Ram" selected="True" />
+            <Field field="Venkat" selected="True" />
+            <Field field="Maheshwar" selected="True" />
+            <Field field="Naveen" selected="True" />
+            <Field field="Harshith" selected="True" />
+            <Field field="*Unknown" selected="False" />
+          </DataFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Date" source="File: F:\Indiana University Bloomington\Projects\Project-13 SplitWise Analysis\Splitwise expenses Jun 14.csv" type="Date" />
+            <Field name="Category" size="254" source="File: F:\Indiana University Bloomington\Projects\Project-13 SplitWise Analysis\Splitwise expenses Jun 14.csv" type="V_String" />
+            <Field name="Name" size="9" source="Transpose:" type="String" />
+            <Field name="Value" source="File: F:\Indiana University Bloomington\Projects\Project-13 SplitWise Analysis\Splitwise expenses Jun 14.csv" type="Float" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTranspose" />
+    </Node>
+    <Node ToolID="83">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="654" y="702" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>&gt;</Operator>
+            <Field>Value</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2025-06-15 22:52:19</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>0</Operand>
+              <StartDate>2025-06-15 22:52:19</StartDate>
+              <EndDate>2025-06-15 22:52:19</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Value] &gt; 0</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="Date" source="File: F:\Indiana University Bloomington\Projects\Project-13 SplitWise Analysis\Splitwise expenses Jun 14.csv" type="Date" />
+            <Field name="Category" size="254" source="File: F:\Indiana University Bloomington\Projects\Project-13 SplitWise Analysis\Splitwise expenses Jun 14.csv" type="V_String" />
+            <Field name="Name" size="9" source="Transpose:" type="String" />
+            <Field name="Value" source="File: F:\Indiana University Bloomington\Projects\Project-13 SplitWise Analysis\Splitwise expenses Jun 14.csv" type="Float" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="Date" source="File: F:\Indiana University Bloomington\Projects\Project-13 SplitWise Analysis\Splitwise expenses Jun 14.csv" type="Date" />
+            <Field name="Category" size="254" source="File: F:\Indiana University Bloomington\Projects\Project-13 SplitWise Analysis\Splitwise expenses Jun 14.csv" type="V_String" />
+            <Field name="Name" size="9" source="Transpose:" type="String" />
+            <Field name="Value" source="File: F:\Indiana University Bloomington\Projects\Project-13 SplitWise Analysis\Splitwise expenses Jun 14.csv" type="Float" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="84">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="774" y="690" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Date" action="GroupBy" rename="Date" />
+            <SummarizeField field="Category" action="GroupBy" rename="Category" />
+            <SummarizeField field="Name" action="CountDistinct" rename="ContributorsCount" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Date" source="Summarize: GroupBy - Date" type="Date" />
+            <Field name="Category" size="254" source="Summarize: GroupBy - Category" type="V_String" />
+            <Field name="ContributorsCount" source="Summarize: CountDistinct - Name" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="85">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="906" y="690" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>&gt;</Operator>
+            <Field>ContributorsCount</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2025-06-15 22:54:07</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>1</Operand>
+              <StartDate>2025-06-15 22:54:07</StartDate>
+              <EndDate>2025-06-15 22:54:07</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[ContributorsCount] &gt; 1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="Date" source="Summarize: GroupBy - Date" type="Date" />
+            <Field name="Category" size="254" source="Summarize: GroupBy - Category" type="V_String" />
+            <Field name="ContributorsCount" source="Summarize: CountDistinct - Name" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="Date" source="Summarize: GroupBy - Date" type="Date" />
+            <Field name="Category" size="254" source="Summarize: GroupBy - Category" type="V_String" />
+            <Field name="ContributorsCount" source="Summarize: CountDistinct - Name" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="86">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1194" y="678" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\WELCOME\AppData\Local\Temp\Alteryx\Engine_15300_dd8e2cc52278434fbe8f082cb716d0c2_\Engine_15300_329bdbbd5fef42ae8904118899d94a98~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="88">
+      <GuiSettings>
+        <Position x="1002" y="678" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output9">
+          <RecordInfo>
+            <Field name="Count" source="(Multiple Sources)" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="CountRecords.yxmc" />
+    </Node>
+    <Node ToolID="92">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1098" y="678" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[Count]*100/657" field="Percentage of multiple contributors " size="19.2" type="FixedDecimal" enabled="true" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Percentage of multiple contributors  = [Count]*100/657
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Count" source="(Multiple Sources)" type="Int64" />
+            <Field name="Percentage of multiple contributors " scale="2" size="19" source="Formula: [Count]*100/657" type="FixedDecimal" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="93">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="546" y="666" width="204" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Percentage of multiple contributors</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="94">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="546" y="558" width="240" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Variance among people (how unevenly is the cost distributed among people?)</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="14" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output26" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output26" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output26" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output26" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output26" />
+      <Destination ToolID="28" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output26" />
+      <Destination ToolID="76" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output26" />
+      <Destination ToolID="82" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="62" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Output" />
+      <Destination ToolID="23" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Output" />
+      <Destination ToolID="59" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="25" Connection="Output" />
+      <Destination ToolID="26" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="25" Connection="Output" />
+      <Destination ToolID="31" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="25" Connection="Output" />
+      <Destination ToolID="40" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="25" Connection="Output" />
+      <Destination ToolID="43" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="26" Connection="Output" />
+      <Destination ToolID="47" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="28" Connection="Output" />
+      <Destination ToolID="29" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="29" Connection="Output" />
+      <Destination ToolID="30" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="30" Connection="Output" />
+      <Destination ToolID="57" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="31" Connection="Output" />
+      <Destination ToolID="48" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="39" Connection="Output" />
+      <Destination ToolID="49" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="40" Connection="Output" />
+      <Destination ToolID="39" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="43" Connection="Output" />
+      <Destination ToolID="51" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="47" Connection="Output" />
+      <Destination ToolID="65" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="48" Connection="Output" />
+      <Destination ToolID="66" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="49" Connection="Output" />
+      <Destination ToolID="55" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="50" Connection="Output" />
+      <Destination ToolID="54" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="51" Connection="Output" />
+      <Destination ToolID="50" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="54" Connection="Output" />
+      <Destination ToolID="45" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="55" Connection="Output" />
+      <Destination ToolID="44" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="55" Connection="Output" />
+      <Destination ToolID="67" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="57" Connection="Output" />
+      <Destination ToolID="36" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="59" Connection="Output" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="62" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="65" Connection="Output" />
+      <Destination ToolID="33" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="66" Connection="Output" />
+      <Destination ToolID="34" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="67" Connection="True" />
+      <Destination ToolID="68" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="67" Connection="False" />
+      <Destination ToolID="71" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="68" Connection="Output" />
+      <Destination ToolID="69" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="69" Connection="Output" />
+      <Destination ToolID="70" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="71" Connection="Output" />
+      <Destination ToolID="72" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="72" Connection="Output" />
+      <Destination ToolID="73" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="76" Connection="Output" />
+      <Destination ToolID="77" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="77" Connection="Output" />
+      <Destination ToolID="78" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="78" Connection="Output" />
+      <Destination ToolID="79" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="79" Connection="Output" />
+      <Destination ToolID="80" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="82" Connection="Output" />
+      <Destination ToolID="83" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="83" Connection="True" />
+      <Destination ToolID="84" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="84" Connection="Output" />
+      <Destination ToolID="85" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="85" Connection="True" />
+      <Destination ToolID="88" Connection="Input8" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="88" Connection="Output9" />
+      <Destination ToolID="92" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="92" Connection="Output" />
+      <Destination ToolID="86" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="False" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <DefaultTZ value="Local" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <IsTemplate value="False" />
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>SplitWise Flow1</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="c3e4dd2d-c19b-4357-94ce-11f3090c444d" />
+      <Telemetry>
+        <PreviousWorkflowId value="af78a7d0-74a5-410a-9301-548128e52c67" />
+        <OriginWorkflowId value="185b3ba2-5a01-450d-80ec-85e6a43cc5ff" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+    <RuntimeProperties>
+      <Actions />
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (18)</Name>
+          <ToolId value="18" />
+          <Questions />
+        </Question>
+      </Questions>
+      <ModuleType>Wizard</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="0" />
+      <MacroInputs />
+      <MacroOutputs />
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="2" Selected="False" />
+        <Tool ToolId="14" Selected="True" />
+        <Tool ToolId="16" Selected="False" />
+        <Tool ToolId="20" Selected="False" />
+        <Tool ToolId="22" Selected="False" />
+        <Tool ToolId="33" Selected="False" />
+        <Tool ToolId="34" Selected="False" />
+        <Tool ToolId="36" Selected="False" />
+        <Tool ToolId="44" Selected="False" />
+        <Tool ToolId="45" Selected="False" />
+        <Tool ToolId="70" Selected="False" />
+        <Tool ToolId="73" Selected="False" />
+        <Tool ToolId="80" Selected="False" />
+        <Tool ToolId="86" Selected="False" />
+        <Tool ToolId="88" Selected="True" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>
